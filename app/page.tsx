@@ -134,7 +134,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex flex-col bg-woah px-8 relative mt-16 font-poppins">
+      <div className="flex flex-col bg-woah px-8 relative mt-16 font-poppins after:">
         <img
           className="w-[157px] h-[157px] rounded-full mx-auto -mt-20"
           src="/assets/images/Ellipse 5.svg"
@@ -143,6 +143,7 @@ export default function Home() {
           <div className="  text-white text-[26px] font-normal font-quantico mt-16 mb-2">
             Woah.
           </div>
+          <img src="/assets/images/apo.svg" alt="" className="absolute left-[240px] top-[10px]" />
           <div className="w-[267px] h-[106px] text-[#E5E5E5] text-sm font-normal leading-[23.03px]">
             {`“The video is fantastic, and has been really well received by those
             I’ve shared it with. Our CEO described it is ‘sensational’ and said
@@ -166,10 +167,10 @@ export default function Home() {
 
       {/* Ready transform */}
       <div className="w-full h-[279px] bg-narrative flex flex-col justify-center items-center">
-        <p className="w-[291px] left-[51px] -[3125px]  text-black text-2xl font-bold font-inter">
+        <p className="w-[291px] left-[51px] -[3125px] text-center text-black text-2xl font-bold font-inter">
           Ready to Transform your Narrative
         </p>
-        <div className="w-[334px] left-[30px] -[3196px]   text-black text-base font-istok mb-3">
+        <div className="w-[334px] left-[30px] -[3196px] text-center  text-black text-base font-istok mb-3">
           Let's craft your story together. Reach out for a personalized
           consultation.
         </div>
