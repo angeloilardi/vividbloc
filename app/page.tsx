@@ -144,13 +144,11 @@ export default function Home() {
             Woah.
           </div>
           <div className="w-[267px] h-[106px] text-neutral-200 text-sm font-normal font-poppins leading-[23.03px]">
-            “The video is fantastic, and has been really well received by those
-            I’ve shared it with. Our CEO described it is ‘sensational’ and said it
-            made his day.”
+            {`“The video is fantastic, and has been really well received by those
+            I’ve shared it with. Our CEO described it is ‘sensational’ and said
+            it made his day.”`}
           </div>
-          <div className=" text-white text-base font-bold">
-            Jane Doe
-          </div>
+          <div className=" text-white text-base font-bold">Jane Doe</div>
           <div className=" text-white text-sm font-normal">
             SomeCompany LLC.
           </div>
