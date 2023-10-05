@@ -20,7 +20,7 @@ export default function Home() {
           <img
             src="/assets/images/Polygon 1.svg"
             alt=""
-            className="text-center w-[17.5px]"
+            className=" w-[17.5px]"
           />
         </button>
         <img
@@ -88,7 +88,7 @@ export default function Home() {
         Our Craft
       </div>
       <div className="w-[392px] h-[297px]  left-0 -[1573px] bg-picture-layover-2 bg-cover relative">
-        <div className="text-center text-neutral-200 text-xs font-normal before:opacity-50 absolute bottom-10 font-istok px-8">
+        <div className=" text-neutral-200 text-xs font-normal before:opacity-50 absolute bottom-10 font-istok px-8">
           We don't just make videos; we craft narratives. From concept to final
           cut, we're committed to adding that 'extra layer' to every project.
         </div>
@@ -134,30 +134,30 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex flex-col bg-woah px-8 relative mt-16">
+      <div className="flex flex-col bg-woah px-8 relative mt-16 font-poppins">
         <img
           className="w-[157px] h-[157px] rounded-full mx-auto -mt-20"
           src="/assets/images/Ellipse 5.svg"
         />
         <div className="px-8">
-          <div className="  text-white text-[26px] font-normal font-quantico mt-20 mb-2">
+          <div className="  text-white text-[26px] font-normal font-quantico mt-16 mb-2">
             Woah.
           </div>
-          <div className="w-[267px] h-[106px] text-neutral-200 text-sm font-normal font-poppins leading-[23.03px]">
+          <div className="w-[267px] h-[106px] text-[#E5E5E5] text-sm font-normal leading-[23.03px]">
             {`“The video is fantastic, and has been really well received by those
             I’ve shared it with. Our CEO described it is ‘sensational’ and said
             it made his day.”`}
           </div>
-          <div className=" text-white text-base font-bold">Jane Doe</div>
-          <div className=" text-white text-sm font-normal">
+          <div className=" text-white text-base font-bold mt-6">Jane Doe</div>
+          <div className=" text-white text-sm font-normal mt-0.5">
             SomeCompany LLC.
           </div>
-          <div className=" text-blue-500 text-sm font-normal">
+          <div className=" text-[rgba(83,146,191,1)] text-sm font-normal mt-4">
             https://somecompanyllc.co
           </div>
         </div>
 
-        <div className="flex">
+        <div className="flex mt-10 mx-auto mb-24">
           <div className="w-5 h-5 left-0 -0  bg-neutral-900 rounded-full" />
           <div className="w-5 h-5 left-[29px] -0  bg-gradient-to-r from-blue-700 via-violet-300 to-yellow-100 rounded-full" />
           <div className="w-5 h-5 left-[58px] -0  bg-neutral-900 rounded-full" />
@@ -165,36 +165,49 @@ export default function Home() {
       </div>
 
       {/* Ready transform */}
-      <div className="w-[395px] h-[279px] left-[-1px] -[3087px]  bg-gradient-to-r from-blue-700 via-violet-300 to-yellow-100" />
-      <div className="w-[291px] left-[51px] -[3125px]  text-center text-black text-2xl font-bold font-['Inter']">
-        Ready to Transform your Narrative
-      </div>
-      <div className="w-[334px] left-[30px] -[3196px]  text-center text-black text-base">
-        Let's craft your story together. Reach out for a personalized
-        consultation.
-      </div>
-      <div className="w-[210px] h-12 left-[92px] -[3272px]  bg-white rounded-sm" />
-      <div className="left-[126px] -[3285px]  text-black text-lg font-normal font-['Inter']">
-        Connect with Us
+      <div className="w-full h-[279px] bg-narrative flex flex-col justify-center items-center">
+        <p className="w-[291px] left-[51px] -[3125px]  text-black text-2xl font-bold font-inter">
+          Ready to Transform your Narrative
+        </p>
+        <div className="w-[334px] left-[30px] -[3196px]   text-black text-base font-istok mb-3">
+          Let's craft your story together. Reach out for a personalized
+          consultation.
+        </div>
+        <div className="w-[210px] h-12 bg-white rounded-sm flex justify-center items-center mt-7">
+          <p className=" text-black text-lg font-normal font-inter ">
+            Connect with Us
+          </p>
+        </div>
       </div>
 
       {/* Footer */}
 
-      <div className="flex flex-col">
-        <p className="text-center text-white text-lg leading-tight">About Us</p>
-        <p className="text-center text-white text-lg leading-tight">
-          Our Craft
-        </p>
-        <p className="text-center text-white text-lg leading-tight"> Blog</p>
-        <p className="text-center text-white text-lg leading-tight"> Contact</p>
+      <div className="flex flex-col items-center gap-5">
+        <h1 className="text-lg font-normal bg-logo-gradient text-transparent bg-clip-text mt-16">
+          vividbloc.studio
+        </h1>
+        <p className=" text-white text-lg leading-tight">About Us</p>
+        <p className=" text-white text-lg leading-tight">Our Craft</p>
+        <p className=" text-white text-lg leading-tight"> Blog</p>
+        <p className=" text-white text-lg leading-tight"> Contact</p>
       </div>
+      <hr className="border-zinc-700 w-[320px] mx-auto mt-11" />
       <div className="w-6 h-6 left-[238px] -[3714px] ">
         <div className="w-6 h-6 left-0 -0 "></div>
       </div>
-      <div className="w-6 h-6 left-[186px] -[3714px] " />
-      <div className="w-6 h-6 left-[132px] -[3714px] ">
-        <div className="w-6 h-6 left-0 -0 "></div>
+
+      {/* Socials */}
+      <div className="flex gap-7 justify-center">
+        <a href="">
+          <img className="w-6 h-6" src="/assets/images/skill-icons_linkedin.svg"/>
+        </a>
+        <a href="">
+          <img className="w-6 h-6" src="/assets/images/line-md_twitter-x-alt.svg"/>
+        </a>
+          <a href="">
+            <img className="w-6 h-6" src="/assets/images/skill-icons_instagram.svg"/>
+          </a>
       </div>
-    </div>
+      </div>
   );
 }
