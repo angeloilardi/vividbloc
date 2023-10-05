@@ -2,9 +2,9 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="w-[393px] h-[3784px] relative bg-black">
+    <div className="w-full h-[3784px] relative bg-black">
       {/* Top image */}
-      <div className="w-[393px] h-[607px] bg-top-page font-istok bg-cover bg-no-repeat rounded-b-[196px] relative">
+      <div className="w-full h-[607px] bg-top-page font-istok bg-cover bg-no-repeat rounded-b-[196px] relative bg-center">
         <div className="flex pt-10 justify-between">
           <h1 className="text-lg font-normal bg-logo-gradient inline-block text-transparent bg-clip-text ml-6">
             vividbloc.studio
