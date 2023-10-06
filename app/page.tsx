@@ -2,9 +2,9 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="w-full h-[3784px] relative bg-black">
+    <div className="w-full h-full relative bg-black">
       {/* Top image */}
-      <div className="w-full h-[607px] bg-top-page font-istok bg-cover bg-no-repeat rounded-b-[196px] relative bg-center">
+      <div className="w-full h-[607px] bg-top-page font-istok bg-cover bg-no-repeat rounded-b-[196px] md:rounded-l-[404px] md:rounded-b-[0px] md:bg-top-page-lg md:max-w-[892px] relative bg-center md:border-b-0 md:ml-auto">
         <div className="flex pt-10 justify-between">
           <h1 className="text-lg font-normal bg-logo-gradient inline-block text-transparent bg-clip-text ml-6">
             vividbloc.studio
@@ -59,12 +59,10 @@ export default function Home() {
           </div>
           <div className="h-[89px] w-px  bg-gradient-to-r from-blue-700 via-violet-300 to-yellow-100 ml-[32px]" />
         </div>
-        <div className="flex flex-col">
-          <div className="left-[59px] -[948px]  text-white text-2xl font-bold">
-            Who We Are
-          </div>
-          <div className="w-[279px] left-[59px] -[985px]  font-istok">
-            <p className="text-neutral-200 text-lg font-normal  leading-snug">
+        <div className="flex flex-col mr-12">
+          <div className="text-white text-2xl font-bold">Who We Are</div>
+          <div className="mt-2">
+            <p className="text-neutral-200 text-lg font-normal max-w-[60vw] font-istok leading-snug">
               Welcome to{" "}
               <span className="text-lg font-normal bg-logo-gradient inline-block text-transparent bg-clip-text leading-snug">
                 ViVidBloc.studio
@@ -78,7 +76,8 @@ export default function Home() {
               , designed to reflect the world as it truly is. We call it
               'Unified Vision,' and it's what sets us apart.
             </p>
-            <div className="w-[302px] h-[174px] bg-picture-layover bg-cover -mt-6" />
+            <div className="w-full h-0 max-w-[603px] bg-picture-layover bg-cover -mt-6 ml-auto pt-[66.65%]" />
+            {/* <div className="w-[302px] h-[174px] bg-picture-layover bg-cover -mt-6" /> */}
           </div>
         </div>
       </div>
@@ -87,30 +86,30 @@ export default function Home() {
       <div className="left-[28px] -[1488px]  text-white text-2xl font-bold mt-28 mb-16 ml-8">
         Our Craft
       </div>
-      <div className="w-[392px] h-[297px]  left-0 -[1573px] bg-picture-layover-2 bg-cover relative">
-        <div className=" text-neutral-200 text-xs font-normal before:opacity-50 absolute bottom-10 font-istok px-8">
+      <div className="w-full h-[297px] bg-picture-layover-2 bg-cover relative">
+        <p className=" text-neutral-200 text-xs font-normal before:opacity-50 absolute bottom-10 font-istok px-8">
           We don't just make videos; we craft narratives. From concept to final
           cut, we're committed to adding that 'extra layer' to every project.
-        </div>
+        </p>
       </div>
 
       {/* Services */}
 
       <div className="font-istok flex flex-col">
-        <div className="h-[59px] w-[392px] bg-violet-300 bg-opacity-10 flex justify-center items-center">
+        <div className="h-[59px] bg-violet-300 bg-opacity-10 flex justify-center items-center">
           <p className="text-violet-300 text-base font-normal">
             Video Production
           </p>
         </div>
-        <div className="h-[59px] w-[392px] bg-yellow-100 bg-opacity-10 flex justify-center items-center">
+        <div className="h-[59px] bg-yellow-100 bg-opacity-10 flex justify-center items-center">
           <p className="text-yellow-100 text-base font-normal">
             Talent Management
           </p>
         </div>
-        <div className="h-[58px] w-[392px] bg-pink-300 bg-opacity-10 flex justify-center items-center">
+        <div className="h-[58px]  bg-pink-300 bg-opacity-10 flex justify-center items-center">
           <p className="text-pink-300 text-base">Personal Branding</p>
         </div>
-        <div className="h-[58px] w-[392px] bg-blue-700 bg-opacity-10 flex justify-center items-center">
+        <div className="h-[58px]  bg-blue-700 bg-opacity-10 flex justify-center items-center">
           <p className="text-blue-700 text-base">Event Management</p>
         </div>
       </div>
@@ -134,7 +133,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex flex-col bg-woah px-8 relative mt-16 font-poppins after:">
+      <div className="flex flex-col bg-woah px-8 relative mt-16 font-poppins">
         <img
           className="w-[157px] h-[157px] rounded-full mx-auto -mt-20"
           src="/assets/images/Ellipse 5.svg"
@@ -143,8 +142,12 @@ export default function Home() {
           <div className="  text-white text-[26px] font-normal font-quantico mt-16 mb-2">
             Woah.
           </div>
-          <img src="/assets/images/apo.svg" alt="" className="absolute left-[240px] top-[10px]" />
-          <div className="w-[267px] h-[106px] text-[#E5E5E5] text-sm font-normal leading-[23.03px]">
+          <img
+            src="/assets/images/apo.svg"
+            alt=""
+            className="absolute left-[30%] top-[28%]"
+          />
+          <div className="text-[#E5E5E5] text-sm font-normal leading-[23.03px]">
             {`“The video is fantastic, and has been really well received by those
             I’ve shared it with. Our CEO described it is ‘sensational’ and said
             it made his day.”`}
@@ -159,8 +162,8 @@ export default function Home() {
         </div>
 
         <div className="flex mt-10 mx-auto mb-24">
-          <div className="w-5 h-5 left-0 -0  bg-neutral-900 rounded-full" />
-          <div className="w-5 h-5 left-[29px] -0  bg-gradient-to-r from-blue-700 via-violet-300 to-yellow-100 rounded-full" />
+          <div className="w-5 h-5 left-0 -0  bg-[#151515] rounded-full" />
+          <div className="w-5 h-5 left-[29px] -0  bg-narrative rounded-full" />
           <div className="w-5 h-5 left-[58px] -0  bg-neutral-900 rounded-full" />
         </div>
       </div>
@@ -183,32 +186,40 @@ export default function Home() {
 
       {/* Footer */}
 
-      <div className="flex flex-col items-center gap-5">
-        <h1 className="text-lg font-normal bg-logo-gradient text-transparent bg-clip-text mt-16">
+      <div className="flex flex-col md:flex-row items-center gap-5 mt-16 md:justify-between mx-8">
+        <h1 className="text-lg font-normal bg-logo-gradient text-transparent bg-clip-text">
           vividbloc.studio
         </h1>
-        <p className=" text-white text-lg leading-tight">About Us</p>
-        <p className=" text-white text-lg leading-tight">Our Craft</p>
-        <p className=" text-white text-lg leading-tight"> Blog</p>
-        <p className=" text-white text-lg leading-tight"> Contact</p>
-      </div>
-      <hr className="border-zinc-700 w-[320px] mx-auto mt-11" />
-      <div className="w-6 h-6 left-[238px] -[3714px] ">
-        <div className="w-6 h-6 left-0 -0 "></div>
+        <div className="flex flex-col md:flex-row gap-5 text-center">
+          <p className=" text-white text-lg leading-tight">About Us</p>
+          <p className=" text-white text-lg leading-tight">Our Craft</p>
+          <p className=" text-white text-lg leading-tight"> Blog</p>
+          <p className=" text-white text-lg leading-tight"> Contact</p>
+        </div>
+        <hr className="border-zinc-700 w-[320px] mx-auto mt-11 md:hidden" />
+        <div className="flex gap-7 justify-center mt-16 pb-16">
+          <a href="">
+            <img
+              className="w-6 h-6"
+              src="/assets/images/skill-icons_linkedin.svg"
+            />
+          </a>
+          <a href="">
+            <img
+              className="w-6 h-6"
+              src="/assets/images/line-md_twitter-x-alt.svg"
+            />
+          </a>
+          <a href="">
+            <img
+              className="w-6 h-6"
+              src="/assets/images/skill-icons_instagram.svg"
+            />
+          </a>
+        </div>
       </div>
 
       {/* Socials */}
-      <div className="flex gap-7 justify-center">
-        <a href="">
-          <img className="w-6 h-6" src="/assets/images/skill-icons_linkedin.svg"/>
-        </a>
-        <a href="">
-          <img className="w-6 h-6" src="/assets/images/line-md_twitter-x-alt.svg"/>
-        </a>
-          <a href="">
-            <img className="w-6 h-6" src="/assets/images/skill-icons_instagram.svg"/>
-          </a>
-      </div>
-      </div>
+    </div>
   );
 }
