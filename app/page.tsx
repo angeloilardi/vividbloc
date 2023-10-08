@@ -133,16 +133,16 @@ export default function Home() {
           <div className="left-[66px] -[2218px]  text-white text-2xl font-bold">
             Voices of Our Tribe
           </div>
-          <div className="w-[279px] left-[66px] -[2255px]  text-neutral-200 text-lg font-normal  leading-snug">
+          <div className="w-[279px] left-[66px] -[2255px]  text-neutral-200 text-lg font-normal leading-snug">
             Meet the brands and individuals who've transformed their stories
             with us. Real narratives, real impact
           </div>
         </div>
       </div>
 
-      <div className="flex flex-col bg-woah px-8 relative mt-16 font-poppins">
+      <div className="flex flex-col bg-woah px-8 relative mt-16 font-poppins md:flex-row items-center max-w-[964px] mx-auto">
         <img
-          className="w-[157px] h-[157px] rounded-full mx-auto -mt-20"
+          className="w-[157px] h-[157px] rounded-full mx-auto -mt-20 md:mt-0"
           src="/assets/images/Ellipse 5.svg"
         />
         <div className="px-8">
@@ -167,12 +167,12 @@ export default function Home() {
             https://somecompanyllc.co
           </div>
         </div>
+      </div>
 
-        <div className="flex mt-10 mx-auto mb-24">
-          <div className="w-5 h-5 left-0 -0  bg-[#151515] rounded-full" />
-          <div className="w-5 h-5 left-[29px] -0  bg-narrative rounded-full" />
-          <div className="w-5 h-5 left-[58px] -0  bg-neutral-900 rounded-full" />
-        </div>
+      <div className="flex mt-10 mx-auto mb-24 justify-center">
+        <div className="w-5 h-5 left-0 -0  bg-[#151515] rounded-full" />
+        <div className="w-5 h-5 left-[29px] -0  bg-narrative rounded-full" />
+        <div className="w-5 h-5 left-[58px] -0  bg-neutral-900 rounded-full" />
       </div>
 
       {/* Ready transform */}
