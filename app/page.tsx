@@ -66,8 +66,8 @@ export default function Home() {
         </div>
         <div className="flex flex-col mr-12">
           <div className="text-white text-2xl font-bold">Who We Are</div>
-          <div className="mt-2">
-            <p className="text-neutral-200 text-lg font-normal max-w-[60vw] font-istok leading-snug">
+          <div className="mt-2 text-lg xl:text-xl">
+            <p className="text-neutral-200  font-normal max-w-[729px] font-istok leading-snug">
               Welcome to{" "}
               <span className="text-lg font-normal bg-logo-gradient inline-block text-transparent bg-clip-text leading-snug">
                 ViVidBloc.studio
@@ -81,11 +81,13 @@ export default function Home() {
               , designed to reflect the world as it truly is. We call it
               'Unified Vision,' and it's what sets us apart.
             </p>
-            <div className="w-full h-0 max-w-[603px] bg-picture-layover bg-cover -mt-6 ml-auto pt-[66.65%]" />
+
             {/* <div className="w-[302px] h-[174px] bg-picture-layover bg-cover -mt-6" /> */}
           </div>
         </div>
       </div>
+      {/* <div className="w-full h-0 max-w-[603px] bg-picture-layover bg-cover max-h-[350px] -mt-6 ml-auto pt-[66.65%]" /> */}
+      <div className="w-[302px] h-[174px] max-w-[603px] bg-picture-layover bg-cover max-h-[350px] -mt-6 ml-auto md:w-[602px] md:h-[350px] md:-mt-24" />
 
       {/* Our craft */}
       <div className="left-[28px] -[1488px]  text-white text-2xl font-bold mt-28 mb-16 ml-8">
