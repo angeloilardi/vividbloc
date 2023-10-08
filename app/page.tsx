@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div className="w-full h-full relative bg-black">
       {/* Top image */}
-      <div className="w-full h-[607px] bg-top-page font-istok bg-cover bg-no-repeat rounded-b-[196px] md:rounded-l-[404px] md:rounded-b-[0px] md:bg-top-page-lg md:max-w-[892px] relative bg-center md:border-b-0 md:ml-auto">
+      <div className="w-full h-[607px] bg-top-page font-istok bg-cover bg-no-repeat rounded-b-[196px] md:rounded-l-[404px] md:rounded-b-[0px] md:bg-top-page-lg md:max-w-[892px] relative bg-center md:border-b-0 md:ml-auto lg:h-[807px]">
         <div className="flex pt-10 justify-between">
           <h1 className="text-lg font-normal bg-logo-gradient inline-block text-transparent bg-clip-text ml-6">
             vividbloc.studio
@@ -23,29 +23,34 @@ export default function Home() {
             className=" w-[17.5px]"
           />
         </button>
-        <img
-          src="/assets/images/vividbloc studio.svg"
-          alt=""
-          className="left-[34px]  absolute top-[566px]"
-        />
       </div>
 
       {/* Intro */}
-      <div className="flex flex-col font-inter mt-12 ml-8 max-w-[300px] mb-24">
-        <p className="text-white text-2xl font-bold">
-          Where Your{" "}
-          <span className="text-white text-2xl font-bold bg-highlight-right inline-block italic">
-            Story Takes
-          </span>
-          <span className="text-white text-2xl font-bold bg-highlight-left italic">
-            Center Stage
-          </span>
-        </p>
-        <p className="text-white text-base font-normal mt-3">
+      <img
+        src="/assets/images/vividbloc studio.svg"
+        alt=""
+        className="left-[34px] absolute top-[566px] md:top-[262px] md:left-[108px] lg:w-[291px] lg:h-[150px]"
+      />
+
+      <div className="flex flex-col font-inter -mt-8 z-10 ml-8 max-w-[300px] mb-24 md:max-w-full lg:top-[380px] lg:left-[108px] lg:absolute lg:ml-0">
+        {/* <img src="/assets/images/vividbloc studio.svg" alt="" className="w-[112px] h-[58px] absolute z-10 md:w-[291px] md:h-[150px]" /> */}
+        <div className="text-white text-2xl font-bold mt-24 xl:text-[40px] xl:bg-none">
+          <p>
+            Where Your{" "}
+            <span className="bg-highlight-right inline-block italic xl:bg-none xl:not-italic">
+              Story Takes
+            </span>
+            <span className="hidden md:inline-block">&nbsp;</span>
+            <span className="bg-highlight-left italic xl:bg-none xl:not-italic">
+              Center Stage
+            </span>
+          </p>
+        </div>
+        <p className="text-white text-base font-normal mt-3 xl:text-2xl">
           Changing the Conversation, One Frame at a Time
         </p>
         {/* Discover your story */}
-        <p className=" text-white text-base font-normal font-istok mt-6">
+        <p className=" text-white text-base font-normal font-istok mt-6 xl:text-xl">
           Discover Your Story
         </p>
         <div className="w-[142px] h-px left-[34px] -[817px]  bg-gradient-to-r from-blue-700 via-violet-300 to-yellow-100" />
