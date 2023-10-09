@@ -64,7 +64,7 @@ export default function Home() {
           </div>
           <div className="h-[89px] w-px  bg-gradient-to-r from-blue-700 via-violet-300 to-yellow-100 ml-[32px]" />
         </div>
-        <div className="flex flex-col mr-12">
+        <div className="flex flex-col mr-[54px]">
           <div className="text-white text-2xl font-bold">Who We Are</div>
           <div className="mt-2 text-lg xl:text-xl">
             <p className="text-neutral-200  font-normal max-w-[729px] font-istok leading-snug">
@@ -87,13 +87,13 @@ export default function Home() {
         </div>
       </div>
       {/* <div className="w-full h-0 max-w-[603px] bg-picture-layover bg-cover max-h-[350px] -mt-6 ml-auto pt-[66.65%]" /> */}
-      <div className="w-[302px] h-[174px] max-w-[603px] bg-picture-layover bg-cover max-h-[350px] -mt-6 ml-auto md:w-[602px] md:h-[350px] md:-mt-24" />
+      <div className="w-[302px] h-[174px] max-w-[603px] bg-picture-layover bg-cover max-h-[350px] -mt-6 ml-auto md:w-[602px] md:h-[350px] mr-[8.15%] md:-mt-24" />
 
       {/* Our craft */}
       <div className="left-[28px] -[1488px]  text-white text-2xl font-bold mt-28 mb-16 ml-8">
         Our Craft
       </div>
-      <div className="w-full h-[297px] bg-picture-layover-2 bg-cover relative">
+      <div className="w-[392px] mx-auto h-[297px] bg-picture-layover-2 bg-cover relative  md:hidden">
         <p className=" text-neutral-200 text-xs font-normal before:opacity-50 absolute bottom-10 font-istok px-8">
           We don't just make videos; we craft narratives. From concept to final
           cut, we're committed to adding that 'extra layer' to every project.
@@ -102,7 +102,7 @@ export default function Home() {
 
       {/* Services */}
 
-      <div className="font-istok flex flex-col">
+      <div className="font-istok flex flex-col  md:hidden">
         <div className="h-[59px] bg-violet-300 bg-opacity-10 flex justify-center items-center">
           <p className="text-violet-300 text-base font-normal">
             Video Production
@@ -121,6 +121,27 @@ export default function Home() {
         </div>
       </div>
 
+      {/* Our Craft desktop */}
+
+      <div className="flex invisible md:visible">
+        <div className="after:bg-video-prod mix-blend-normal relative after:absolute after:h-full after:w-full  after:top-0 after:left-0">
+          <img src="/assets/images/Rectangle 36.png" alt="" className="" />
+          <p className="z-10 text-white -mb-24">Video Production</p>
+        </div>
+        <div className="after:bg-other-crafts mix-blend-normal relative after:absolute after:h-full after:w-full after:top-0 after:left-0">
+          <img src="/assets/images/Rectangle 37.png" alt="" className="" />
+          <p></p>
+        </div>
+        <div className="after:bg-other-crafts mix-blend-normal relative after:absolute after:h-full after:w-full after:top-0 after:left-0">
+          <img src="/assets/images/Rectangle 38.png" alt="" className="" />
+          <p></p>
+        </div>
+        <div className="after:bg-other-crafts mix-blend-normal relative after:absolute after:h-full after:w-full after:top-0 after:left-0">
+          <img src="/assets/images/Rectangle 39.png" alt="" className="" />
+          <p></p>
+        </div>
+      </div>
+
       {/* Testimonials */}
       <div className="flex mt-24 mb-10">
         <div className="flex flex-col basis-1/12 flex-wrap w-[59px] justify-start">
@@ -129,11 +150,11 @@ export default function Home() {
           </div>
           <div className="h-[89px] w-px  bg-gradient-to-r from-blue-700 via-violet-300 to-yellow-100 ml-[32px]" />
         </div>
-        <div className="flex flex-col">
-          <div className="left-[66px] -[2218px]  text-white text-2xl font-bold">
+        <div className="flex flex-col max-w-[729px] ">
+          <div className=" text-white text-2xl font-bold">
             Voices of Our Tribe
           </div>
-          <div className="w-[279px] left-[66px] -[2255px]  text-neutral-200 text-lg font-normal leading-snug">
+          <div className=" text-neutral-200 text-lg font-normal leading-snug">
             Meet the brands and individuals who've transformed their stories
             with us. Real narratives, real impact
           </div>
