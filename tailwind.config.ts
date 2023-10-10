@@ -25,7 +25,8 @@ const config: Config = {
         "woah": "linear-gradient(to right, rgba(23, 23, 23, 0), rgba(23, 23, 23, 1), rgba(23, 23, 23, 0))",
         "narrative": "linear-gradient(107.43deg, #1044FC 0.66%, rgba(198, 172, 245, 0.8) 41.13%, rgba(241, 144, 223, 0.91) 70.47%, #FFF5B7 98.24%)",
         "video-prod": "linear-gradient(329.36deg, rgba(16, 68, 252, 0.38) 17.28%, rgba(198, 172, 245, 0) 43.28%, rgba(241, 144, 223, 0) 62.13%, rgba(255, 245, 183, 0) 79.98%)",
-        "other-crafts": "linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%)"
+        "other-crafts": "linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%)",
+        "gradient": "linear-gradient(to right, rgba(16, 68, 252, 1), rgba(198, 172, 245, 1), rgba(241, 144, 223, 1), rgba(255, 245, 183, 1))"
 
       },
       fontFamily: {

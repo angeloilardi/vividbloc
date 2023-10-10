@@ -34,43 +34,45 @@ export default function Home() {
       </div>
 
       {/* Mobile menu */}
-      <div
-        className={`w-[85vw] absolute top-0 right-0 md:hidden ${
-          !toggle ? "hidden" : "block"
-        } bg-black text-white`}
-      >
-        <button
-          className="text-lg ml-auto block p-5 font-istok"
-          onClick={() => setToggle(!toggle)}
+      <div className= {`p-[1px] rounded-md bg-gradient w-[85vw] absolute top-0 right-0 md:hidden ${
+            !toggle ? "hidden" : "block"
+          } bg-black text-white rounded-[10px] border outline-gradient`}>
+        <div
+          className={`bg-black`}
         >
-          Close
-        </button>
-        <div className="flex flex-col text-center text-[32px] gap-11 mb-[52px] font-inter italic font-bold">
-          <a href="">About Us</a>
-          <a href="">Our Craft</a>
-          <a href="">Blog</a>
-          <a href="">Contact</a>
-        </div>
-        <hr className="text-[rgba(71, 71, 71, 1)] mx-2" />
-        <div className="flex gap-7 justify-center mt-16 pb-16">
-          <a href="">
-            <img
-              className="w-6 h-6"
-              src="/assets/images/skill-icons_linkedin.svg"
-            />
-          </a>
-          <a href="">
-            <img
-              className="w-6 h-6"
-              src="/assets/images/line-md_twitter-x-alt.svg"
-            />
-          </a>
-          <a href="">
-            <img
-              className="w-6 h-6"
-              src="/assets/images/skill-icons_instagram.svg"
-            />
-          </a>
+          <button
+            className="text-lg ml-auto block p-5 font-istok"
+            onClick={() => setToggle(!toggle)}
+          >
+            Close
+          </button>
+          <div className="flex flex-col text-center text-[32px] gap-11 mb-[52px] font-inter italic font-bold">
+            <a href="">About Us</a>
+            <a href="">Our Craft</a>
+            <a href="">Blog</a>
+            <a href="">Contact</a>
+          </div>
+          <hr className="text-[rgba(71, 71, 71, 1)] mx-2" />
+          <div className="flex gap-7 justify-center mt-16 pb-16">
+            <a href="">
+              <img
+                className="w-6 h-6"
+                src="/assets/images/skill-icons_linkedin.svg"
+              />
+            </a>
+            <a href="">
+              <img
+                className="w-6 h-6"
+                src="/assets/images/line-md_twitter-x-alt.svg"
+              />
+            </a>
+            <a href="">
+              <img
+                className="w-6 h-6"
+                src="/assets/images/skill-icons_instagram.svg"
+              />
+            </a>
+          </div>
         </div>
       </div>
 
