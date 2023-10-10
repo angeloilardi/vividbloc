@@ -1,6 +1,11 @@
+"use client";
+
 import Image from "next/image";
+import { useState } from "react";
 
 export default function Home() {
+  const [toggle, setToggle] = useState(false);
+
   return (
     <div className="w-full h-full relative bg-black">
       {/* Top image */}
@@ -9,7 +14,10 @@ export default function Home() {
           <h1 className="text-lg font-normal bg-logo-gradient inline-block text-transparent bg-clip-text ml-6">
             vividbloc.studio
           </h1>
-          <button className="text-white text-lg font-normal mr-8 justify-self-center">
+          <button
+            className="text-white text-lg font-normal mr-8 justify-self-center md:hidden"
+            onClick={() => setToggle(!toggle)}
+          >
             Menu
           </button>
         </div>
@@ -23,6 +31,47 @@ export default function Home() {
             className=" w-[17.5px]"
           />
         </button>
+      </div>
+
+      {/* Mobile menu */}
+      <div
+        className={`w-[85vw] absolute top-0 right-0 md:hidden ${
+          !toggle ? "hidden" : "block"
+        } bg-black text-white`}
+      >
+        <button
+          className="text-lg ml-auto block p-5 font-istok"
+          onClick={() => setToggle(!toggle)}
+        >
+          Close
+        </button>
+        <div className="flex flex-col text-center text-[32px] gap-11 mb-[52px] font-inter italic font-bold">
+          <a href="">About Us</a>
+          <a href="">Our Craft</a>
+          <a href="">Blog</a>
+          <a href="">Contact</a>
+        </div>
+        <hr className="text-[rgba(71, 71, 71, 1)] mx-2" />
+        <div className="flex gap-7 justify-center mt-16 pb-16">
+          <a href="">
+            <img
+              className="w-6 h-6"
+              src="/assets/images/skill-icons_linkedin.svg"
+            />
+          </a>
+          <a href="">
+            <img
+              className="w-6 h-6"
+              src="/assets/images/line-md_twitter-x-alt.svg"
+            />
+          </a>
+          <a href="">
+            <img
+              className="w-6 h-6"
+              src="/assets/images/skill-icons_instagram.svg"
+            />
+          </a>
+        </div>
       </div>
 
       {/* Intro */}
