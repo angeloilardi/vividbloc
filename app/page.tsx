@@ -8,9 +8,22 @@ export default function Home() {
 
   return (
     <div className="w-full h-full relative bg-black">
+      {/* Navbar */}
+      <div className=" py-5 justify-between bg-transparent hidden md:flex mr-8 items-center">
+        <h1 className="text-lg font-normal bg-logo-gradient inline-block text-transparent bg-clip-text ml-6">
+          vividbloc.studio
+        </h1>
+        <div className="flex flex-col md:flex-row gap-5 text-center">
+          <p className=" text-white text-lg leading-tight">About Us</p>
+          <p className=" text-white text-lg leading-tight">Our Craft</p>
+          <p className=" text-white text-lg leading-tight"> Blog</p>
+          <p className=" text-white text-lg leading-tight"> Contact</p>
+        </div>
+      </div>
+
       {/* Top image */}
       <div className="w-full h-[607px] bg-top-page font-istok bg-cover bg-no-repeat rounded-b-[196px] md:rounded-l-[404px] md:rounded-b-[0px] md:bg-top-page-lg md:max-w-[892px] relative bg-center md:border-b-0 md:ml-auto lg:h-[807px]">
-        <div className="flex pt-10 justify-between">
+        <div className="flex pt-10 justify-between md:hidden">
           <h1 className="text-lg font-normal bg-logo-gradient inline-block text-transparent bg-clip-text ml-6">
             vividbloc.studio
           </h1>
@@ -34,12 +47,12 @@ export default function Home() {
       </div>
 
       {/* Mobile menu */}
-      <div className= {`p-[1px] rounded-md bg-gradient w-[85vw] absolute top-0 right-0 md:hidden ${
-            !toggle ? "hidden" : "block"
-          } bg-black text-white rounded-[10px] border outline-gradient`}>
-        <div
-          className={`bg-black`}
-        >
+      <div
+        className={`p-[1px] rounded-md bg-gradient w-[85vw] absolute top-0 right-0 md:hidden ${
+          !toggle ? "hidden" : "block"
+        } bg-black text-white rounded-[10px] border outline-gradient`}
+      >
+        <div className={`bg-black`}>
           <button
             className="text-lg ml-auto block p-5 font-istok"
             onClick={() => setToggle(!toggle)}
@@ -210,23 +223,23 @@ export default function Home() {
           <div className="h-[89px] w-px  bg-gradient-to-r from-blue-700 via-violet-300 to-yellow-100 ml-[32px]" />
         </div>
         <div className="flex flex-col max-w-[729px] ">
-          <div className=" text-white text-2xl font-bold">
+          <div className=" text-white text-2xl font-bold mb-2 md:mb-3">
             Voices of Our Tribe
           </div>
-          <div className=" text-neutral-200 text-lg font-normal leading-snug">
+          <div className=" text-neutral-200 text-lg font-normal leading-snug md:text-xl">
             Meet the brands and individuals who've transformed their stories
             with us. Real narratives, real impact
           </div>
         </div>
       </div>
 
-      <div className="flex flex-col bg-woah p-8 relative mt-16 font-poppins md:flex-row items-center max-w-[1440px] mx-auto">
+      <div className="flex flex-col bg-woah p-8 relative mt-16 font-poppins md:flex-row items-center max-w-[964px] mx-auto rounded justify-center items-center">
         <img
           className="w-[157px] h-[157px] lg:w-[273px] lg:h-[273px] rounded-full -mt-20 md:mt-0 basis-4/12"
           src="/assets/images/Ellipse 5.svg"
         />
         <div className="px-8">
-          <div className="  text-white text-[26px] font-normal font-quantico mt-16 mb-2 lg:text-6xl">
+          <div className="  text-white text-[26px] font-normal font-quantico mt-16 mb-2 lg:text-6xl md:mt-0">
             Woah.
           </div>
           <div className="text-[#E5E5E5] text-sm font-normal leading-[23.03px] max-w-[484px] mr-auto lg:text-base relative">
@@ -274,7 +287,7 @@ export default function Home() {
       {/* Footer */}
 
       <div className="flex flex-col md:flex-row items-center gap-5 mt-16 md:justify-between mx-8">
-        <h1 className="text-lg font-normal bg-logo-gradient text-transparent bg-clip-text">
+        <h1 className="text-lg md:text-xl font-normal bg-logo-gradient text-transparent bg-clip-text">
           vividbloc.studio
         </h1>
         <div className="flex flex-col md:flex-row gap-5 text-center">
