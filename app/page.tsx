@@ -90,7 +90,7 @@ export default function Home() {
       <div className="w-[302px] h-[174px] max-w-[603px] bg-picture-layover bg-cover max-h-[350px] -mt-6 ml-auto md:w-[602px] md:h-[350px] mr-[8.15%] md:-mt-24" />
 
       {/* Our craft */}
-      <div className="left-[28px] -[1488px]  text-white text-2xl font-bold mt-28 mb-16 ml-8">
+      <div className="left-[28px] -[1488px]  text-white text-2xl font-bold mt-28 mb-16 ml-8 md:text-center">
         Our Craft
       </div>
       <div className="w-[392px] mx-auto h-[297px] bg-picture-layover-2 bg-cover relative  md:hidden">
@@ -123,22 +123,30 @@ export default function Home() {
 
       {/* Our Craft desktop */}
 
-      <div className="flex invisible md:visible">
+      <div className="md:flex hidden gap-2 justify-center font-istok">
         <div className="after:bg-video-prod mix-blend-normal relative after:absolute after:h-full after:w-full  after:top-0 after:left-0">
           <img src="/assets/images/Rectangle 36.png" alt="" className="" />
-          <p className="z-10 text-white -mb-24">Video Production</p>
+          <p className="z-10 text-white absolute bottom-[31px] lg:text-2xl  w-full text-center">
+            Video Production
+          </p>
         </div>
         <div className="after:bg-other-crafts mix-blend-normal relative after:absolute after:h-full after:w-full after:top-0 after:left-0">
           <img src="/assets/images/Rectangle 37.png" alt="" className="" />
-          <p></p>
+          <p className="z-10 text-white absolute bottom-[31px] lg:text-2xl  w-full text-center">
+            Talent Management
+          </p>
         </div>
         <div className="after:bg-other-crafts mix-blend-normal relative after:absolute after:h-full after:w-full after:top-0 after:left-0">
           <img src="/assets/images/Rectangle 38.png" alt="" className="" />
-          <p></p>
+          <p className="z-10 text-white absolute bottom-[31px] lg:text-2xl w-full text-center">
+            Personal Branding
+          </p>
         </div>
         <div className="after:bg-other-crafts mix-blend-normal relative after:absolute after:h-full after:w-full after:top-0 after:left-0">
           <img src="/assets/images/Rectangle 39.png" alt="" className="" />
-          <p></p>
+          <p className="z-10 text-white absolute bottom-[31px] lg:text-2xl  w-full text-center">
+            Event Management
+          </p>
         </div>
       </div>
 
@@ -161,24 +169,24 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex flex-col bg-woah px-8 relative mt-16 font-poppins md:flex-row items-center max-w-[964px] mx-auto">
+      <div className="flex flex-col bg-woah p-8 relative mt-16 font-poppins md:flex-row items-center max-w-[1440px] mx-auto">
         <img
-          className="w-[157px] h-[157px] rounded-full mx-auto -mt-20 md:mt-0"
+          className="w-[157px] h-[157px] lg:w-[273px] lg:h-[273px] rounded-full -mt-20 md:mt-0 basis-4/12"
           src="/assets/images/Ellipse 5.svg"
         />
         <div className="px-8">
-          <div className="  text-white text-[26px] font-normal font-quantico mt-16 mb-2">
+          <div className="  text-white text-[26px] font-normal font-quantico mt-16 mb-2 lg:text-6xl">
             Woah.
           </div>
-          <img
-            src="/assets/images/apo.svg"
-            alt=""
-            className="absolute left-[30%] top-[28%]"
-          />
-          <div className="text-[#E5E5E5] text-sm font-normal leading-[23.03px]">
+          <div className="text-[#E5E5E5] text-sm font-normal leading-[23.03px] max-w-[484px] mr-auto lg:text-base relative">
             {`“The video is fantastic, and has been really well received by those
             I’ve shared it with. Our CEO described it is ‘sensational’ and said
             it made his day.”`}
+            <img
+              src="/assets/images/apo.svg"
+              alt=""
+              className="absolute right-[7%] -top-[28%]"
+            />
           </div>
           <div className=" text-white text-base font-bold mt-6">Jane Doe</div>
           <div className=" text-white text-sm font-normal mt-0.5">
