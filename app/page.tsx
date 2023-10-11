@@ -8,7 +8,7 @@ export default function Home() {
     <div className="w-full h-full relative bg-black">
       {/* Navbar */}
 
-      <div className=" py-5 justify-between bg-transparent hidden md:flex mr-8 items-center">
+      <nav className=" py-5 justify-between bg-transparent hidden md:flex mr-8 items-center">
         <p className="text-lg font-normal bg-gradient-to-right inline-block text-transparent bg-clip-text ml-6">
           vividbloc.studio
         </p>
@@ -18,7 +18,7 @@ export default function Home() {
           <a href="#">Blog</a>
           <a href="#">Contact</a>
         </div>
-      </div>
+      </nav>
 
       {/* Hero image + mobile menu */}
       <div className="w-full h-[607px] bg-top-page font-istok bg-cover bg-no-repeat rounded-b-[196px] md:rounded-l-[404px] md:rounded-b-[0px] md:bg-top-page-lg md:max-w-[892px] relative bg-center md:border-b-0 md:ml-auto lg:h-[807px]">
@@ -123,7 +123,7 @@ export default function Home() {
 
       {/* ABOUT US */}
 
-      <div className="flex">
+      <section className="flex">
         <div className="flex flex-col basis-1/12 flex-wrap w-[59px] justify-start">
           <div className="origin-top-left -rotate-90 text-white text-xs font-normal mt-16 w-[80px] ml-[29px]">
             ABOUT US
@@ -151,7 +151,7 @@ export default function Home() {
             </p>
           </div>
         </div>
-      </div>
+      </section>
       <div className="w-[302px] h-[174px] max-w-[603px] bg-picture-layover bg-cover max-h-[350px] -mt-6 ml-auto md:w-[602px] md:h-[350px] mr-[8.15%] md:-mt-24" />
 
       {/* Our craft */}
@@ -165,9 +165,6 @@ export default function Home() {
           cut, we're committed to adding that 'extra layer' to every project.
         </p>
       </div>
-
-      {/* Services */}
-
       <div className="font-istok flex flex-col  md:hidden">
         <div className="h-[59px] bg-violet-300 bg-opacity-10 flex justify-center items-center">
           <p className="text-violet-300 text-base font-normal">
@@ -218,7 +215,7 @@ export default function Home() {
 
       {/* TESTIMONIALS */}
 
-      <div className="flex mt-24 mb-10">
+      <section className="flex mt-24 mb-10">
         <div className="flex flex-col basis-1/12 flex-wrap w-[59px] justify-start">
           <div className="origin-top-left -rotate-90 text-white text-xs font-normal mt-24 w-[80px] ml-[29px]">
             TESTIMONIALS
@@ -234,14 +231,14 @@ export default function Home() {
             with us. Real narratives, real impact
           </p>
         </div>
-      </div>
+      </section>
 
       <div className="flex flex-col bg-woah p-8 relative mt-16 font-poppins md:flex-row max-w-[964px] mx-auto rounded justify-center items-center">
         <img
           className="w-[157px] h-[157px] lg:w-[273px] lg:h-[273px] rounded-full -mt-20 md:mt-0 basis-4/12"
           src="/assets/images/Ellipse 5.svg"
         />
-        <div className="px-8">
+        <section className="px-8">
           <p className="  text-white text-[26px] font-normal font-quantico mt-16 mb-2 lg:text-6xl md:mt-0">
             Woah.
           </p>
@@ -262,7 +259,7 @@ export default function Home() {
           <p className=" text-[rgba(83,146,191,1)] text-sm font-normal mt-4">
             https://somecompanyllc.co
           </p>
-        </div>
+        </section>
       </div>
       <div className="flex mt-10 mx-auto mb-24 justify-center">
         <div className="w-5 h-5 left-0 -0  bg-[#151515] rounded-full" />
@@ -272,7 +269,7 @@ export default function Home() {
 
       {/* Ready to transform banner */}
 
-      <div className="w-full h-[279px] bg-narrative flex flex-col justify-center items-center">
+      <section className="w-full h-[279px] bg-narrative flex flex-col justify-center items-center">
         <h3 className="text-center text-black text-2xl font-bold font-inter mb-[14px] lg:text-[40px]">
           Ready to Transform your Narrative
         </h3>
@@ -285,11 +282,11 @@ export default function Home() {
             Connect with Us
           </a>
         </button>
-      </div>
+      </section>
 
       {/* Footer */}
 
-      <div className="flex flex-col md:flex-row items-center gap-5 mt-16 md:justify-between mx-8">
+      <footer className="flex flex-col md:flex-row items-center gap-5 mt-16 md:justify-between mx-8">
         <p className="text-lg md:text-xl font-normal bg-gradient-to-right text-transparent bg-clip-text">
           vividbloc.studio
         </p>
@@ -323,7 +320,7 @@ export default function Home() {
             />
           </a>
         </div>
-      </div>
+      </footer>
     </div>
   );
 }
