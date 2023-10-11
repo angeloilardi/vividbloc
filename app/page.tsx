@@ -1,6 +1,4 @@
 "use client";
-
-import Image from "next/image";
 import { useState } from "react";
 
 export default function Home() {
@@ -9,24 +7,25 @@ export default function Home() {
   return (
     <div className="w-full h-full relative bg-black">
       {/* Navbar */}
+
       <div className=" py-5 justify-between bg-transparent hidden md:flex mr-8 items-center">
-        <h1 className="text-lg font-normal bg-logo-gradient inline-block text-transparent bg-clip-text ml-6">
+        <p className="text-lg font-normal bg-gradient-to-right inline-block text-transparent bg-clip-text ml-6">
           vividbloc.studio
-        </h1>
-        <div className="flex flex-col md:flex-row gap-5 text-center">
-          <p className=" text-white text-lg leading-tight">About Us</p>
-          <p className=" text-white text-lg leading-tight">Our Craft</p>
-          <p className=" text-white text-lg leading-tight"> Blog</p>
-          <p className=" text-white text-lg leading-tight"> Contact</p>
+        </p>
+        <div className="flex flex-col md:flex-row gap-5 text-center font-bold text-white text-lg leading-tight">
+          <a href="#">About Us</a>
+          <a href="#">Our Craft</a>
+          <a href="#">Blog</a>
+          <a href="#">Contact</a>
         </div>
       </div>
 
-      {/* Top image */}
+      {/* Hero image + mobile menu */}
       <div className="w-full h-[607px] bg-top-page font-istok bg-cover bg-no-repeat rounded-b-[196px] md:rounded-l-[404px] md:rounded-b-[0px] md:bg-top-page-lg md:max-w-[892px] relative bg-center md:border-b-0 md:ml-auto lg:h-[807px]">
         <div className="flex pt-10 justify-between md:hidden">
-          <h1 className="text-lg font-normal bg-logo-gradient inline-block text-transparent bg-clip-text ml-6">
+          <p className="text-lg font-normal bg-gradient-to-right inline-block text-transparent bg-clip-text ml-6">
             vividbloc.studio
-          </h1>
+          </p>
           <button
             className="text-white text-lg font-normal mr-8 justify-self-center md:hidden"
             onClick={() => setToggle(!toggle)}
@@ -46,7 +45,7 @@ export default function Home() {
         </button>
       </div>
 
-      {/* Mobile menu */}
+      {/* Side navbar */}
       <div
         className={`p-[1px] rounded-md bg-gradient w-[85vw] absolute top-0 right-0 md:hidden ${
           !toggle ? "hidden" : "block"
@@ -89,51 +88,56 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Intro */}
+      {/* Big Logo */}
       <img
         src="/assets/images/vividbloc studio.svg"
         alt=""
         className="left-[34px] absolute top-[566px] md:top-[262px] md:left-[108px] lg:w-[291px] lg:h-[150px]"
       />
 
+      {/* CTA */}
+
       <div className="flex flex-col font-inter -mt-8 z-10 ml-8 max-w-[300px] mb-24 md:max-w-full lg:top-[380px] lg:left-[108px] lg:absolute lg:ml-0">
-        {/* <img src="/assets/images/vividbloc studio.svg" alt="" className="w-[112px] h-[58px] absolute z-10 md:w-[291px] md:h-[150px]" /> */}
         <div className="text-white text-2xl font-bold mt-24 xl:text-[40px] xl:bg-none">
-          <p>
+          <h1 className="font-inter">
             Where Your{" "}
-            <span className="bg-highlight-right inline-block italic xl:bg-none xl:not-italic">
+            <span className="bg-highlight-right inline-block italic xl:bg-none xl:not-italic font-inter">
               Story Takes
             </span>
             <span className="hidden md:inline-block">&nbsp;</span>
-            <span className="bg-highlight-left italic xl:bg-none xl:not-italic">
+            <span className="bg-highlight-left italic xl:bg-none xl:not-italic font-inter">
               Center Stage
             </span>
-          </p>
+          </h1>
         </div>
-        <p className="text-white text-base font-normal mt-3 xl:text-2xl">
+        <h2 className="text-white text-base font-normal mt-3 xl:text-2xl font-inter">
           Changing the Conversation, One Frame at a Time
-        </p>
-        {/* Discover your story */}
-        <p className=" text-white text-base font-normal font-istok mt-6 xl:text-xl">
-          Discover Your Story
-        </p>
-        <div className="w-[142px] h-px left-[34px] -[817px]  bg-gradient-to-r from-blue-700 via-violet-300 to-yellow-100" />
+        </h2>
+        <div className="max-w-max">
+          <p className="block text-white text-base font-normal font-istok mt-6 xl:text-xl">
+            Discover Your Story
+          </p>
+          <div className="h-px bg-gradient-to-right w-full" />
+        </div>
       </div>
 
-      {/* Who we are */}
+      {/* ABOUT US */}
+
       <div className="flex">
         <div className="flex flex-col basis-1/12 flex-wrap w-[59px] justify-start">
-          <div className="origin-top-left -rotate-90 text-white text-xs font-normal mt-20 w-[80px] ml-[29px]">
+          <div className="origin-top-left -rotate-90 text-white text-xs font-normal mt-16 w-[80px] ml-[29px]">
             ABOUT US
           </div>
-          <div className="h-[89px] w-px  bg-gradient-to-r from-blue-700 via-violet-300 to-yellow-100 ml-[32px]" />
+          <div className="h-[89px] w-px  bg-gradient-to-top ml-[32px]" />
         </div>
         <div className="flex flex-col mr-[54px]">
-          <div className="text-white text-2xl font-bold">Who We Are</div>
+          <h2 className="text-white text-2xl font-bold font-inter">
+            Who We Are
+          </h2>
           <div className="mt-2 text-lg xl:text-xl">
             <p className="text-neutral-200  font-normal max-w-[729px] font-istok leading-snug">
               Welcome to{" "}
-              <span className="text-lg font-normal bg-logo-gradient inline-block text-transparent bg-clip-text leading-snug">
+              <span className="text-lg font-normal bg-gradient-to-right inline-block font-istok text-transparent bg-clip-text leading-snug">
                 ViVidBloc.studio
               </span>
               , a realm where creativity knows no bounds. We're not just a video
@@ -145,18 +149,16 @@ export default function Home() {
               , designed to reflect the world as it truly is. We call it
               'Unified Vision,' and it's what sets us apart.
             </p>
-
-            {/* <div className="w-[302px] h-[174px] bg-picture-layover bg-cover -mt-6" /> */}
           </div>
         </div>
       </div>
-      {/* <div className="w-full h-0 max-w-[603px] bg-picture-layover bg-cover max-h-[350px] -mt-6 ml-auto pt-[66.65%]" /> */}
       <div className="w-[302px] h-[174px] max-w-[603px] bg-picture-layover bg-cover max-h-[350px] -mt-6 ml-auto md:w-[602px] md:h-[350px] mr-[8.15%] md:-mt-24" />
 
       {/* Our craft */}
-      <div className="left-[28px] -[1488px]  text-white text-2xl font-bold mt-28 mb-16 ml-8 md:text-center">
+
+      <h2 className="left-[28px] -[1488px]  text-white text-2xl font-bold mt-28 mb-16 ml-8 md:text-center font-inter">
         Our Craft
-      </div>
+      </h2>
       <div className="w-[392px] mx-auto h-[297px] bg-picture-layover-2 bg-cover relative  md:hidden">
         <p className=" text-neutral-200 text-xs font-normal before:opacity-50 absolute bottom-10 font-istok px-8">
           We don't just make videos; we craft narratives. From concept to final
@@ -214,35 +216,36 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Testimonials */}
+      {/* TESTIMONIALS */}
+
       <div className="flex mt-24 mb-10">
         <div className="flex flex-col basis-1/12 flex-wrap w-[59px] justify-start">
           <div className="origin-top-left -rotate-90 text-white text-xs font-normal mt-24 w-[80px] ml-[29px]">
             TESTIMONIALS
           </div>
-          <div className="h-[89px] w-px  bg-gradient-to-r from-blue-700 via-violet-300 to-yellow-100 ml-[32px]" />
+          <div className="h-[89px] w-px  bg-gradient-to-top ml-[32px]" />
         </div>
         <div className="flex flex-col max-w-[729px] ">
-          <div className=" text-white text-2xl font-bold mb-2 md:mb-3">
+          <h2 className=" text-white text-2xl font-bold mb-2 md:mb-3 font-inter">
             Voices of Our Tribe
-          </div>
-          <div className=" text-neutral-200 text-lg font-normal leading-snug md:text-xl">
+          </h2>
+          <p className=" text-neutral-200 text-lg font-normal leading-snug md:text-xl font-istok">
             Meet the brands and individuals who've transformed their stories
             with us. Real narratives, real impact
-          </div>
+          </p>
         </div>
       </div>
 
-      <div className="flex flex-col bg-woah p-8 relative mt-16 font-poppins md:flex-row items-center max-w-[964px] mx-auto rounded justify-center items-center">
+      <div className="flex flex-col bg-woah p-8 relative mt-16 font-poppins md:flex-row max-w-[964px] mx-auto rounded justify-center items-center">
         <img
           className="w-[157px] h-[157px] lg:w-[273px] lg:h-[273px] rounded-full -mt-20 md:mt-0 basis-4/12"
           src="/assets/images/Ellipse 5.svg"
         />
         <div className="px-8">
-          <div className="  text-white text-[26px] font-normal font-quantico mt-16 mb-2 lg:text-6xl md:mt-0">
+          <p className="  text-white text-[26px] font-normal font-quantico mt-16 mb-2 lg:text-6xl md:mt-0">
             Woah.
-          </div>
-          <div className="text-[#E5E5E5] text-sm font-normal leading-[23.03px] max-w-[484px] mr-auto lg:text-base relative">
+          </p>
+          <p className="text-sm font-normal leading-[23.03px] max-w-[484px] mr-auto lg:text-base relative font-poppins text-neutral-200">
             {`“The video is fantastic, and has been really well received by those
             I’ve shared it with. Our CEO described it is ‘sensational’ and said
             it made his day.”`}
@@ -251,52 +254,55 @@ export default function Home() {
               alt=""
               className="absolute right-[7%] -top-[28%]"
             />
-          </div>
-          <div className=" text-white text-base font-bold mt-6">Jane Doe</div>
-          <div className=" text-white text-sm font-normal mt-0.5">
+          </p>
+          <p className=" text-white text-base font-bold mt-6">Jane Doe</p>
+          <p className=" text-white text-sm font-normal mt-0.5">
             SomeCompany LLC.
-          </div>
-          <div className=" text-[rgba(83,146,191,1)] text-sm font-normal mt-4">
+          </p>
+          <p className=" text-[rgba(83,146,191,1)] text-sm font-normal mt-4">
             https://somecompanyllc.co
-          </div>
+          </p>
         </div>
       </div>
-
       <div className="flex mt-10 mx-auto mb-24 justify-center">
         <div className="w-5 h-5 left-0 -0  bg-[#151515] rounded-full" />
         <div className="w-5 h-5 left-[29px] -0  bg-narrative rounded-full" />
         <div className="w-5 h-5 left-[58px] -0  bg-neutral-900 rounded-full" />
       </div>
 
-      {/* Ready transform */}
+      {/* Ready to transform banner */}
+
       <div className="w-full h-[279px] bg-narrative flex flex-col justify-center items-center">
-        <p className="w-[291px] left-[51px] -[3125px] text-center text-black text-2xl font-bold font-inter">
+        <h3 className="text-center text-black text-2xl font-bold font-inter mb-[14px] lg:text-[40px]">
           Ready to Transform your Narrative
-        </p>
-        <div className="w-[334px] left-[30px] -[3196px] text-center  text-black text-base font-istok mb-3">
+        </h3>
+        <p className="text-center  text-black text-base font-istok mb-3 lg:text-xl">
           Let's craft your story together. Reach out for a personalized
           consultation.
-        </div>
-        <div className="w-[210px] h-12 bg-white rounded-sm flex justify-center items-center mt-7">
-          <p className=" text-black text-lg font-normal font-inter ">
+        </p>
+        <button className="w-[210px] h-12 bg-white rounded-sm flex justify-center items-center mt-7">
+          <a className=" text-black text-lg font-normal font-inter" href="#">
             Connect with Us
-          </p>
-        </div>
+          </a>
+        </button>
       </div>
 
       {/* Footer */}
 
       <div className="flex flex-col md:flex-row items-center gap-5 mt-16 md:justify-between mx-8">
-        <h1 className="text-lg md:text-xl font-normal bg-logo-gradient text-transparent bg-clip-text">
+        <p className="text-lg md:text-xl font-normal bg-gradient-to-right text-transparent bg-clip-text">
           vividbloc.studio
-        </h1>
-        <div className="flex flex-col md:flex-row gap-5 text-center">
-          <p className=" text-white text-lg leading-tight">About Us</p>
-          <p className=" text-white text-lg leading-tight">Our Craft</p>
-          <p className=" text-white text-lg leading-tight"> Blog</p>
-          <p className=" text-white text-lg leading-tight"> Contact</p>
+        </p>
+        <div className="flex flex-col md:flex-row gap-5 text-center text-white text-lg leading-tight">
+          <a href="#">About Us</a>
+          <a href="#">Our Craft</a>
+          <a href="#">Blog</a>
+          <a href="#">Contact</a>
         </div>
         <hr className="border-zinc-700 w-[320px] mx-auto mt-11 md:hidden" />
+
+        {/* Socials */}
+
         <div className="flex gap-7 justify-center mt-16 pb-16">
           <a href="">
             <img
@@ -318,8 +324,6 @@ export default function Home() {
           </a>
         </div>
       </div>
-
-      {/* Socials */}
     </div>
   );
 }

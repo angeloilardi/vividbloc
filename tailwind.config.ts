@@ -12,7 +12,6 @@ const config: Config = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-        'logo-gradient': "linear-gradient(to right, rgba(16, 68, 252, 1), rgba(198, 172, 245, 1), rgba(241, 144, 223, 1), rgba(255, 245, 183, 1))",
         'ellipse': "linear-gradient(120.87deg, rgba(16, 68, 252, 1), rgba(170, 123, 255, 0.83), rgba(250, 116, 225, 0.92), rgba(255, 245, 183, 1))",
         'ellipse-2': 'linear-gradient(120.87deg, #1044FC 14.08%, rgba(170, 123, 255, 0.83) 32.73%, rgba(250, 116, 225, 0.92) 62.11%, #FFF5B7 81.36%)',
         'top-page': "linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%), url('/assets/images/ed23cdab92148ad3f4ac9dd5fa29c248.gif')",
@@ -26,7 +25,8 @@ const config: Config = {
         "narrative": "linear-gradient(107.43deg, #1044FC 0.66%, rgba(198, 172, 245, 0.8) 41.13%, rgba(241, 144, 223, 0.91) 70.47%, #FFF5B7 98.24%)",
         "video-prod": "linear-gradient(329.36deg, rgba(16, 68, 252, 0.38) 17.28%, rgba(198, 172, 245, 0) 43.28%, rgba(241, 144, 223, 0) 62.13%, rgba(255, 245, 183, 0) 79.98%)",
         "other-crafts": "linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%)",
-        "gradient": "linear-gradient(to right, rgba(16, 68, 252, 1), rgba(198, 172, 245, 1), rgba(241, 144, 223, 1), rgba(255, 245, 183, 1))"
+        "gradient-to-right": "linear-gradient(to right, rgba(16, 68, 252, 1), rgba(198, 172, 245, 1), rgba(241, 144, 223, 1), rgba(255, 245, 183, 1))",
+        "gradient-to-top": "linear-gradient(to top, rgba(16, 68, 252, 1), rgba(198, 172, 245, 1), rgba(241, 144, 223, 1), rgba(255, 245, 183, 1))"
 
       },
       fontFamily: {
@@ -34,7 +34,7 @@ const config: Config = {
         "istok": "var(--istok-font)",
         "quantico": "var(--quantico-font)",
         "poppins": "var(--poppins-font)",
-      }
+      },
     },
   },
   plugins: [],
