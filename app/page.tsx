@@ -1,8 +1,13 @@
 "use client";
+import Image from "next/image";
 import { useState } from "react";
 
+import PlayButton from "./components/PlayButton";
+import PauseButton from "./components/PauseButton";
+
 export default function Home() {
-  const [toggle, setToggle] = useState(false);
+  const [menuToggle, setMenuToggle] = useState(false);
+  const [playToggle, setPlayToggle] = useState(true);
 
   return (
     <div className="w-full h-full relative bg-black">
@@ -21,40 +26,48 @@ export default function Home() {
       </nav>
 
       {/* Hero image + mobile menu */}
-      <div className="w-full h-[607px] bg-top-page font-istok bg-cover bg-no-repeat rounded-b-[196px] md:rounded-l-[404px] md:rounded-b-[0px] md:bg-top-page-lg md:max-w-[892px] relative bg-center md:border-b-0 md:ml-auto lg:h-[807px]">
+      <div
+        className={`w-full h-[607px] ${
+          playToggle ? `bg-top-page-static` : "bg-top-page"
+        } font-istok bg-cover bg-no-repeat rounded-b-[196px] md:rounded-l-[404px] md:rounded-b-[0px] md:${
+          playToggle ? `bg-top-page-lg-static` : "bg-top-page-lg"
+        } md:max-w-[892px] relative bg-center md:border-b-0 md:ml-auto lg:h-[807px]`}
+      >
         <div className="flex pt-10 justify-between md:hidden">
           <p className="text-lg font-normal bg-gradient-to-right inline-block text-transparent bg-clip-text ml-6">
             vividbloc.studio
           </p>
           <button
             className="text-white text-lg font-normal mr-8 justify-self-center md:hidden"
-            onClick={() => setToggle(!toggle)}
+            onClick={() => setMenuToggle(!menuToggle)}
           >
             Menu
           </button>
         </div>
         <button
           className="w-[53px] h-[53px]  bg-ellipse-2 rounded-full flex flex-wrap
-    justify-center content-center left-[50%] absolute top-[50%]"
+    justify-center items-center left-[50%] absolute top-[50%]"
+          onClick={() => setPlayToggle(!playToggle)}
         >
-          <img
+          {playToggle ? <PlayButton /> : <PauseButton />}
+          {/* <img
             src="/assets/images/Polygon 1.svg"
             alt=""
             className=" w-[17.5px]"
-          />
+          /> */}
         </button>
       </div>
 
       {/* Side navbar */}
       <div
         className={`p-[1px] rounded-md bg-gradient w-[85vw] absolute top-0 right-0 md:hidden ${
-          !toggle ? "hidden" : "block"
+          !menuToggle ? "hidden" : "block"
         } bg-black text-white rounded-[10px] border outline-gradient`}
       >
         <div className={`bg-black`}>
           <button
             className="text-lg ml-auto block p-5 font-istok"
-            onClick={() => setToggle(!toggle)}
+            onClick={() => setMenuToggle(!menuToggle)}
           >
             Close
           </button>
@@ -67,21 +80,25 @@ export default function Home() {
           <hr className="text-[rgba(71, 71, 71, 1)] mx-2" />
           <div className="flex gap-7 justify-center mt-16 pb-16">
             <a href="">
-              <img
-                className="w-6 h-6"
+              <Image
+                height={24}
+                width={24}
                 src="/assets/images/skill-icons_linkedin.svg"
+                alt={""}
               />
             </a>
             <a href="">
               <img
                 className="w-6 h-6"
                 src="/assets/images/line-md_twitter-x-alt.svg"
+                alt=""
               />
             </a>
             <a href="">
               <img
                 className="w-6 h-6"
                 src="/assets/images/skill-icons_instagram.svg"
+                alt=""
               />
             </a>
           </div>
@@ -237,6 +254,7 @@ export default function Home() {
         <img
           className="w-[157px] h-[157px] lg:w-[273px] lg:h-[273px] rounded-full -mt-20 md:mt-0 basis-4/12"
           src="/assets/images/Ellipse 5.svg"
+          alt=""
         />
         <section className="px-8">
           <p className="  text-white text-[26px] font-normal font-quantico mt-16 mb-2 lg:text-6xl md:mt-0">
@@ -302,21 +320,27 @@ export default function Home() {
 
         <div className="flex gap-7 justify-center mt-16 pb-16">
           <a href="">
-            <img
-              className="w-6 h-6"
+            <Image
+              height={24}
+              width={24}
               src="/assets/images/skill-icons_linkedin.svg"
+              alt={""}
             />
           </a>
           <a href="">
-            <img
-              className="w-6 h-6"
+            <Image
+              height={24}
+              width={24}
               src="/assets/images/line-md_twitter-x-alt.svg"
+              alt={""}
             />
           </a>
           <a href="">
-            <img
-              className="w-6 h-6"
+            <Image
+              height={24}
+              width={24}
               src="/assets/images/skill-icons_instagram.svg"
+              alt={""}
             />
           </a>
         </div>
