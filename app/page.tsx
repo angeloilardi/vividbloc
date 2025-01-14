@@ -4,10 +4,12 @@ import { useState } from "react";
 
 import PlayButton from "./components/PlayButton";
 import PauseButton from "./components/PauseButton";
+import MenuIcon from "./components/MenuIcon";
+import CloseIcon from "./components/CloseIcon";
 
 export default function Home() {
   const [menuToggle, setMenuToggle] = useState(false);
-  const [playToggle, setPlayToggle] = useState(true);
+  const [playToggle, setPlayToggle] = useState(false);
 
   return (
     <div className="w-full h-full relative bg-black">
@@ -41,7 +43,7 @@ export default function Home() {
             className="text-white text-lg font-normal mr-8 justify-self-center md:hidden"
             onClick={() => setMenuToggle(!menuToggle)}
           >
-            Menu
+            <MenuIcon></MenuIcon>
           </button>
         </div>
         <button
@@ -50,11 +52,6 @@ export default function Home() {
           onClick={() => setPlayToggle(!playToggle)}
         >
           {playToggle ? <PlayButton /> : <PauseButton />}
-          {/* <img
-            src="/assets/images/Polygon 1.svg"
-            alt=""
-            className=" w-[17.5px]"
-          /> */}
         </button>
       </div>
 
@@ -69,7 +66,7 @@ export default function Home() {
             className="text-lg ml-auto block p-5 font-istok"
             onClick={() => setMenuToggle(!menuToggle)}
           >
-            Close
+            <CloseIcon></CloseIcon>
           </button>
           <div className="flex flex-col text-center text-[32px] gap-11 mb-[52px] font-inter italic font-bold">
             <a href="">About Us</a>
